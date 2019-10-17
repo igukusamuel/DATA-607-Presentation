@@ -1,0 +1,142 @@
+---
+title: "DATA 607 - What is a good model?"
+author: "Samuel I Kigamba"
+date: "October 16, 2019"
+output:
+  html_document:
+    df_print: paged
+  pdf_document:
+    extra_dependencies:
+    - geometry
+    - multicol
+    - multirow
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+--------------------------------------------------------------------------------
+
+\clearpage
+
+#The model structure
+
+Data mining is a craft. It involves application of science, technology and art as well.
+
+The model structure.
+
+![Process diagram showing the relationship between the different phases of CRISP-DM.](CRISP.png)
+
+[image link]("https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining#/media/File:CRISP-DM_Process_Diagram.png")
+
+
+
+
+--------------------------------------------------------------------------------
+
+\clearpage
+
+#Modeling step by step
+
+###1. Business Understanding:
+
+* Identify the business problem and characterize it. Link to the objectives of the organization.
+      
+* High level understanding of the fundamental operations of a business is important. Engage analysts with organizational/ institutional knowledge.
+      
+* What is the expected value of the outcome?
+
+####Note: Step 2 and 3 below consumes 85% of the time (failing to plan is planning to fail).
+
+##2. Data Understanding: 
+
+* What data do we need to achieve objective 1?
+      
+* What is the cost of this data?
+      
+* Is additional investment in obtaining data merited?
+
+
+--------------------------------------------------------------------------------
+
+\clearpage
+
+
+##3. Data Preparation:
+
+* Data conversion.
+      
+* The success of this step depends on how well the problem was structured as well as in variable selection.
+      
+
+
+##4. Modeling:
+
+* Actual application of data mining techniques to the data prepared under **step 3**.
+      
+* Heavy application of science and technology.
+      
+* Data mining techniques and available algorithms.
+
+
+##5. Evaluation:
+
+* Rigorous assessment of data mining results. Ensure validity and reliability of results.
+      
+* Test whether extracted patterns are true regularities and not idiosynracies or sample anomalies.
+      
+  **Model generalization**
+      
+* Controlled testing of model before deployment.
+      
+* Ensure results match the required solution to the business problem identified under step 1 and support the required decision making process
+      
+* Check the economic feasibility of the outcome (too many false negatives or positives and their associated costs).
+      
+###Note: Model comprehensibility by key decision makers/ stakeholders is key at this point. ***(they need to sign off the deployment of the model)***.
+      
+      
+
+
+--------------------------------------------------------------------------------
+
+\clearpage
+
+
+##6. Deployment:
+
+* The results and techniques of data mining are put t0 practical use.
+      
+* Test compatibility with the existing systems, and evaluate the need to recode the model for implementaion into the production environment.
+      
+* Return to step 1. The results of data mining and the output of the deployed system could lead to additional insights into ways of improving business performance, new ventures or additional lines of business worthy of a discussion at the strategic level.
+
+
+
+###NOTE: A good model allows for reasonable consistency, repeatability and objectivity and above all ***comprehensibility by key stakeholders/decision makers***. 
+
+
+
+--------------------------------------------------------------------------------
+
+\clearpage
+
+#Characteristics of a good model.
+
+* Meets the expected value set at the business evaluation stage. provides a clear link between the goal (business problem/objective) and the mining outcome.
+
+* Achieves a balance between the cost incurred in its creation and the benefits reaped from its output or its application into the foreseable future.
+
+* Meets or outperforms baseline (benchmark) requirements, or performs within a range of the benchmark that is acceptable.
+
+* Understandability vs simplicity. Ensure a balance between model complexity and its understandability. The decision makers will need to signoff on the deployment.
+
+* Strikes a balance between complexity overfit and accuracy.
+
+* Achieves a balance between the cost (false +ves and -ves) and the benefits that acumulates on use of the model over time.
+
+* Avoid plain accuracy measures of the model due to their simplicity (the simpicity is their down fall).
+
+###Note: There is no one fit all evaluation matrix.
+
